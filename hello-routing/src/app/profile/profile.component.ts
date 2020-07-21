@@ -44,7 +44,6 @@ export class ProfileComponent implements OnInit {
     this.rocp.getTodosById(form).subscribe(
       response => {
         console.log(response);
-        document.getElementById("getTasks").innerHTML="<td>"+response.title+"</td>";
       }
     )
   }
