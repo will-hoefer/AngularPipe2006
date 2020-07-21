@@ -1,0 +1,25 @@
+<!-- <p>{{currentHero}}</p> -->
+<div><button (click) = "getTodosEC2()">Get Todos</button></div>
+<br>
+<div>
+    <form [formGroup]="todos">
+        <input type="text" formControlName='title'>
+        <button (click)='getTodosByIdEC2(todos)'>Get Todo By ID</button>
+    </form>
+    <form [formGroup]="todos">
+        <input type="text" formControlName='title'>
+        <button (click)='postTodosEC2(todos)'>Send Todo By Name</button>
+    </form>
+    <form [formGroup]="todos">
+        <input type="text" formControlName='title'>
+        <button (click)='deleteTodosEC2(todos)'>Delete Todo By ID</button>
+    </form>
+</div>
+<table>
+    <tr>
+        <td>
+            Task
+        </td>
+    <tr id="getTasks">
+    </tr>
+</table>
